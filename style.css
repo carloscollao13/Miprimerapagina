@@ -1,0 +1,143 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Color de fondo */
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50; /* Color verde para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre encabezado y contenido */
+}
+
+header h1 {
+    font-size: 2rem; /* Ajusta el tamaño del texto para ser más responsivo */
+    margin: 0;
+}
+
+/* Sección principal centrada */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro de la sección principal */
+}
+
+.quienes-somos {
+    max-width: 800px;
+    color: #333;
+}
+
+.eslogan {
+    font-style: italic;
+    color: #555;
+}
+
+/* Galería de fotos */
+.galeria {
+    margin-bottom: 40px;
+}
+
+.servicio {
+    display: flex;
+    align-items: flex-start; /* Alinea las imágenes y el texto en la parte superior */
+    margin-bottom: 20px; /* Espacio entre cada servicio */
+}
+
+.servicio img {
+    width: 300px;  /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+.descripcion {
+    margin-left: 20px; /* Espacio entre la imagen y la descripción */
+    flex: 1; /* Ocupa el espacio restante */
+    max-width: 500px; /* Limita el ancho máximo del recuadro de descripción */
+    background-color: #fff; /* Fondo blanco para el recuadro */
+    padding: 10px; /* Espacio interno del recuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el recuadro */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Video */
+.video video {
+    width: 80%;  /* Aumenta el tamaño del video */
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: blue; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las secciones se reorganicen en pantallas pequeñas */
+}
+
+.footer-section {
+    flex-basis: 30%; /* Hace que cada sección ocupe un 30% del pie de página */
+    padding: 10px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p, footer a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Coloca las secciones del pie de página en columna */
+    }
+
+    .footer-section {
+        flex-basis: 100%; /* Hace que cada sección ocupe el 100% del ancho */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Tamaño del texto en el pie de página */
+    }
+}
+
